@@ -1,0 +1,45 @@
+Nume: Anghel Mihai-Gabriel
+Grupa: 323CD
+
+Task1:
+	In ceea ce priveste acest task, lucrurile sunt simple. Iterez prin textul
+ primit ca parametru, extrag fiecare caracter si aplic xor intre ea si caracterul
+aferent cheii.
+
+Task2:
+	Parcurg textul, verific fiecare caracter daca este litera, in caz afirmativ
+aplic rotirea asupra literei cu conditia: daca litera este 'z' si urmeaza sa se roteasca
+aceasta devina 'a'. Analog in cazul 'Z'. Daca respectivul caracter nu e litera, il adaug 
+in ciphertext fara a aplica vreo rotire.
+
+Task3:
+	Se parcurge caracter cu caracter textul si se calculeaza numarul de rotiri pentru
+fiecare dintre acestea. In cazul in care caracterul este litera, se incrementeaza cu 
+numarul aflat anterior, iar daca nu e litera nu se mai prelucreaza, se pune direct in
+in ciphertext. Am folosit o prelungire artificiala a cheii: parcurg si cheia in acelasi
+timp cu textul, daca respectivul caracter din text e litera, atunci se incrementeaza
+si cheia, altfel nu. Daca se ajunge la sfarsitul cheii, se reia parcurgerea acesteia de 
+la 0. In final, scriu rezultatul in registrul cerut.
+
+Task4:
+	In cadrul acestui task, salvez lungimea initiala a textului pe stiva pentru a putea
+calcula indexul la care vom gasi (sau nu) cuvantul. Compar caracter cu caracter textul
+si cuvantul. Daca difera, se reia compararea astfel: iteratorul cuvantului devine 0, iar
+textul se incrementeaza cu o unitate(pentru pasul i, primul caracter din text va fi 
+esi + i). Continui parcurgerea cat timp nu se gaseste cuvantul si lungimea textului 
+este >= cu lungimea cuvantului. In final,  in cazul in care cautarea a reusit, extrag din 
+stiva lungimea initiala si calculez indicele cautat. Altfel, returnez lungimea initiala + 1.
+
+Task5:
+	Se parcurge secventa de biti si se formeaza nibbles. In functie de valoarea si 
+pozitia bitului, calculez valoarea acestuia si pun pe stiva caracterul aferent valorii.
+Dupa terminarea parcurgerii, exista posibilitatea sa existe un nibble incomplet.
+Verific, il calculez si il salvez valoarea pe stiva. La sfarsit, scot elementele din stiva 
+si le salvez in registrul cerut.
+
+
+ 
+
+
+
+
